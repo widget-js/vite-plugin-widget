@@ -1,0 +1,36 @@
+{
+  "name": "@widget-js/vite-plugin-widget",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "publishConfig": {
+    "access": "public"
+  },
+  "private": false,
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --dts --format cjs,esm",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "vite",
+    "vite-plugin"
+  ],
+  "author": "Neo Fu <rtugeek@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@widget-js/core": "workspace:*",
+    "consola": "^2.15.3",
+    "typescript": "^4.9.3"
+  },
+  "peerDependencies": {
+    "vite": "^4.0.0"
+  },
+  "devDependencies": {
+    "tsup": "^6.5.0"
+  }
+}
